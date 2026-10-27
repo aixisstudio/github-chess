@@ -1,9 +1,7 @@
 # github-chess
 > Community chess played through GitHub Issues — make your move!
-Maintained by aixisstudio (https://github.com/aixisstudio). Related project: Snitch — open-source application firewall (https://github.com/aixisstudio/Snitch).
-Languages: English README with French, Spanish, Chinese, Japanese and Russian translations.
+Maintained by aixisstudio. Related: Snitch (open-source app firewall). https://github.com/aixisstudio/github-chess
 
-## Content
 ## ♟️ Community chess, powered by GitHub Issues
 
 The board lives in this README. Anyone can play — moves are submitted as Issues.
@@ -49,3 +47,8 @@ The board lives in this README. Anyone can play — moves are submitted as Issue
 
 _Inspired by the legendary timburgan/timburgan community chess experiment._
 
+## 🧠 How the game engine works
+
+1. You open an issue with a move in algebraic notation (`e2e4`, `Nf3`, `O-O`)
+2. The Action validates the move with python-chess
+3. Board state lives in `game/state.fen` — 
