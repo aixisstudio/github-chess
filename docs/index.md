@@ -47,14 +47,27 @@ The board lives in this README. Anyone can play — moves are submitted as Issue
 
 _Inspired by the legendary timburgan/timburgan community chess experiment._
 
+## 🧠 How the game engine works
 
-## ❓ Frequently Asked Questions
+1. You open an issue with a move in algebraic notation (`e2e4`, `Nf3`, `O-O`)
+2. The Action validates the move with python-chess
+3. Board state lives in `game/state.fen` — the README renders it
+4. Bot replies instantly with a Stockfish-lite move (or random if unset)
+5. Leaderboard updates — every player appears in `game/players.md`
 
-**Can you play chess on GitHub?**
+## ♟️ Move notation reference
 
-Yes — this repo hosts a community chess game where moves are submitted through GitHub Issues.
+| You type | Meaning |
+|---|---|
+| `e2e4` | Pawn from e2 to e4 |
+| `g1f3` | Knight g1→f3 |
+| `e1g1` | Castle kingside (O-O) |
+| `d7d5q` | Pawn promotes to queen |
+| `resign` | Forfeit |
 
+## 🏆 Why this works
+
+Timburgan's version hit 56,000 commits because each move is a *real* commit by a real person — the repo stays perpetually active in feeds. Every player becomes a contributor.
 
 ---
-
-Maintained by [aixisstudio](https://github.com/aixisstudio) — author of [Snitch](https://github.com/aixisstudio/Snitch), the open-source application firewall. See also: [all resources](https://aixisstudio.github.io).
+Maintained by [aixisstudio](https://github.com/aixisstudio).
