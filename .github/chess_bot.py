@@ -45,7 +45,7 @@ else:
     # players board
     pf = state/"players.md"
     lines = pf.read_text().splitlines() if pf.exists() else ["# 🏆 Players","", "| Player | Moves |","|---|---|"]
-    rows = {l.split("|")[1].strip(): int(l.split("|")[2].strip()) for l in lines[3:] if l.startswith("|")}
+    rows = {l.split("|")[1].strip(): int(l.split("|")[2].strip()) for l in lines[3:] if l.startswith("|") and "---" not in l and l.split("|")[2].strip().isdigit()}
     rows[user] = rows.get(user,0)+1
     pf.write_text("\n".join(lines[:3]+[f"| {u} | {n} |" for u,n in sorted(rows.items(),key=lambda x:-x[1])])+"\n")
 fenf.write_text(board.fen())
