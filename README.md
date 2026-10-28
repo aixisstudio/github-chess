@@ -77,3 +77,8 @@ Maintained by [aixisstudio](https://github.com/aixisstudio) — author of [Snitc
 ## License
 
 MIT
+
+## ♟️ Current game
+
+See [game/board.md](game/board.md) — make your move: open an issue titled `e2e4` (or `new` to restart).
+
