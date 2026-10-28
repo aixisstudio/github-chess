@@ -16,7 +16,6 @@ jobs:
       - name: Play move
         id: play
         run: python .github/chess_bot.py
-        env: {GITHUB_EVENT_PATH: ${{ github.event_path }}}
       - name: Commit board
         run: |
           git config user.name "github-actions[bot]"
