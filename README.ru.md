@@ -4,20 +4,18 @@
 
 Общественные шахматы через GitHub Issues — твой ход!
 
-_Подробное содержимое (списки, ссылки, описания) ведётся на английском — разделы ниже помогут сориентироваться._
+##  ️ Общественные шахматы, основанные на проблемах GitHub
 
-## ♟️ Community chess, powered by GitHub Issues
+Совет живет в этом чтении. Играть может любой — ходы представляются как Вопросы.
 
-The board lives in this README. Anyone can play — moves are submitted as Issues.
+###Как играть
 
-## 🎮 How to play
+1. Проверьте текущую доску ниже (обновленную ботом после каждого хода)
+2. Откройте [Выпуск] (../../выпуск/новый) с вашим ходом в алгебраической нотации — например, `chess: e2e4`
+3.Бот проверяет ход, воспроизводит его на доске и закрывает проблему
+4.Сначала приезжай, сначала подавай — один ход на человека, пока не сыграет кто-нибудь другой!
 
-1. Check the current board below (updated by the bot after each move)
-2. Open an [Issue](../../issues/new) titled with your move in algebraic notation — e.g. `chess: e2e4`
-3. A bot validates the move, plays it on the board, and closes the issue
-4. First come, first served — one move per person until someone else plays!
-
-## 📋 Current position
+##   Текущая позиция
 
 ```
     a   b   c   d   e   f   g   h
@@ -41,37 +39,37 @@ The board lives in this README. Anyone can play — moves are submitted as Issue
     a   b   c   d   e   f   g   h
 ```
 
-**White to move.** Move count: 0
+** Белый, чтобы двигаться.** Переместить счет: 0
 
-## 🏅 Hall of fame
+##Зал славы
 
-| Player | Moves |
+Игрок / Moves
 |---|---|
-| *nobody yet — be the first!* | — |
+Никто еще — будь первым!
 
-_Inspired by the legendary timburgan/timburgan community chess experiment._
+Вдохновленный легендарным тимбургским / тимбургским шахматным экспериментом.
 
-## 🧠 How the game engine works
+##  How Как работает игровой движок
 
-1. You open an issue with a move in algebraic notation (`e2e4`, `Nf3`, `O-O`)
-2. The Action validates the move with python-chess
-3. Board state lives in `game/state.fen` — the README renders it
-4. Bot replies instantly with a Stockfish-lite move (or random if unset)
-5. Leaderboard updates — every player appears in `game/players.md`
+1. Вы открываете проблему с движением в алгебраической нотации (`e2e4`, `Nf3`, `O-O`)
+2. Действие подтверждает ход с помощью питона-шахмата
+3.Государство правления живет в `game/state.fen` - README передает его
+4. Бот мгновенно отвечает движением литые стокфиши (или случайным, если не установлен)
+5. Обновления таблицы лидеров — каждый игрок появляется в `game/players.md`
 
-## ♟️ Move notation reference
+##  ️ Переместить ссылку
 
-| You type | Meaning |
+Ты печатаешь значение
 |---|---|
-| `e2e4` | Pawn from e2 to e4 |
-| `g1f3` | Knight g1→f3 |
-| `e1g1` | Castle kingside (O-O) |
-| `d7d5q` | Pawn promotes to queen |
-| `resign` | Forfeit |
+| `e2e4` | Пешка от e2 до e4 |
+`g1f3` Рыцарь g1→f3
+`e1g1` - Замок Кингсайд (O-O)
+↑ `d7d5q` | Pawn Promotes to Queen[править править код]
+`resign` - конфискация
 
-## 🏆 Why this works
+###Почему это работает
 
-Timburgan's version hit 56,000 commits because each move is a *real* commit by a real person — the repo stays perpetually active in feeds. Every player becomes a contributor.
+Версия Тимбургана достигла 56 000 коммитов, потому что каждый ход - это реальное обязательство реального человека - репо остается постоянно активным в кормах. Каждый игрок становится участником.
 
 ---
 ## Участие
