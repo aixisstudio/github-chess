@@ -4,20 +4,18 @@
 
 通过 GitHub Issues 玩的社区国际象棋 — 该你走了！
 
-_详细内容（列表、链接、描述）以英文维护 — 以下章节为你指引。_
+####社区围棋,由GitHub Issues提供动力
 
-## ♟️ Community chess, powered by GitHub Issues
+董事会住在这个研究。 任何人都可以玩——动作作为问题提交。
 
-The board lives in this README. Anyone can play — moves are submitted as Issues.
+∮ 如何演奏∮
 
-## 🎮 How to play
+1. 请检查access-date=中的日期值 (帮助)
+2. 以代数符号(例如 `chess: e2e4`) 的移动方式打开一个[问题] (././issues/new)
+3. 机器人验证动作,在棋盘上演奏,并关闭问题
+4. 先到,先到,先到,每人一动,直到别人玩!
 
-1. Check the current board below (updated by the bot after each move)
-2. Open an [Issue](../../issues/new) titled with your move in algebraic notation — e.g. `chess: e2e4`
-3. A bot validates the move, plays it on the board, and closes the issue
-4. First come, first served — one move per person until someone else plays!
-
-## 📋 Current position
+□ □ □ 现任职位
 
 ```
     a   b   c   d   e   f   g   h
@@ -41,37 +39,37 @@ The board lives in this README. Anyone can play — moves are submitted as Issue
     a   b   c   d   e   f   g   h
 ```
 
-**White to move.** Move count: 0
+** 白色需要移动。 ** 移动计数 : 0
 
-## 🏅 Hall of fame
+□□□□□□□ 名堂
 
-| Player | Moves |
+QQ 玩家 QQ 移动QQ
 |---|---|
-| *nobody yet — be the first!* | — |
+{\fn黑体\fs22\bord1\shad0\3aHBE\4aH00\fscx67\fscy66\2cHFFFFFF\3cH808080}现在还没有人 {\fn黑体\fs22\bord1\shad0\3aHBE\4aH00\fscx67\fscy66\2cHFFFFFF\3cH808080}成为第一个!
 
-_Inspired by the legendary timburgan/timburgan community chess experiment._
+ 受传说中的丁堡人/丁堡人社区围棋实验的启发.
 
-## 🧠 How the game engine works
+# # # 游戏引擎如何运行 #
 
-1. You open an issue with a move in algebraic notation (`e2e4`, `Nf3`, `O-O`)
-2. The Action validates the move with python-chess
-3. Board state lives in `game/state.fen` — the README renders it
-4. Bot replies instantly with a Stockfish-lite move (or random if unset)
-5. Leaderboard updates — every player appears in `game/players.md`
+1. 用代数符号(`e2e4`、`Nf3`、`O-O`)移动打开一个问题
+2. 动作用蟒蛇刀验证动作
+3. 管委会在`game/state.fen`中生活——README使其
+4. 瓶子即时回复,采用鱼群升式移动(或如未设定则随机)
+5. 领导板更新 - 每个玩家出现在 `game/players.md`
 
-## ♟️ Move notation reference
+# # # # # 移动注释引用
 
-| You type | Meaning |
+您输入 。 。
 |---|---|
-| `e2e4` | Pawn from e2 to e4 |
-| `g1f3` | Knight g1→f3 |
-| `e1g1` | Castle kingside (O-O) |
-| `d7d5q` | Pawn promotes to queen |
-| `resign` | Forfeit |
+`e2e4` 从e2到e4
+`g1f3` 骑士 g1 f3 |
+`e1g1` 城堡王边(O-O) |
+`d7d5q` 普恩晋升女王
+`resign` 伪造
 
-## 🏆 Why this works
+□□□□□□□□□□为什么这样行得通
 
-Timburgan's version hit 56,000 commits because each move is a *real* commit by a real person — the repo stays perpetually active in feeds. Every player becomes a contributor.
+Timburgan的版本打击了56,000人,因为每次行动都是真人所为——回波在饲料中永远活跃。 每个玩家都会成为贡献者.
 
 ---
 ## 贡献
