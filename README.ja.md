@@ -4,20 +4,18 @@
 
 GitHub Issues で遊ぶコミュニティチェス — あなたの手番！
 
-_詳細なコンテンツ（リスト・リンク・説明）は保守のため英語です。以下のセクションがガイドになります。_
+## ️️コミュニティチェス、GitHubの問題によって供給
 
-## ♟️ Community chess, powered by GitHub Issues
+ボードは、このREADMEに住んでいます。 誰でもプレイできる — 課題として投稿される
 
-The board lives in this README. Anyone can play — moves are submitted as Issues.
+## ◀ 遊び方
 
-## 🎮 How to play
+1. 下の現在の板を点検して下さい(各移動の後でボットによって更新される)
+2。 `chess: e2e4` であなたの動きと題する [Issue](././issues/new) を開きます
+3。 ボットは移動を検証し、ボード上で再生し、問題を閉じます
+4。 最初に来て、最初に現れた - 他の人が再生するまで一人一人一人の移動!
 
-1. Check the current board below (updated by the bot after each move)
-2. Open an [Issue](../../issues/new) titled with your move in algebraic notation — e.g. `chess: e2e4`
-3. A bot validates the move, plays it on the board, and closes the issue
-4. First come, first served — one move per person until someone else plays!
-
-## 📋 Current position
+##現在の位置
 
 ```
     a   b   c   d   e   f   g   h
@@ -41,37 +39,37 @@ The board lives in this README. Anyone can play — moves are submitted as Issue
     a   b   c   d   e   f   g   h
 ```
 
-**White to move.** Move count: 0
+*白が動く。** 移動数: 0
 
-## 🏅 Hall of fame
+## 🏅 🏅
 
-| Player | Moves |
+| プレイヤー | 移動 |
 |---|---|
-| *nobody yet — be the first!* | — |
+| ※未だに・・・
 
-_Inspired by the legendary timburgan/timburgan community chess experiment._
+ 伝説的な timburgan/timburgan コミュニティ チェス実験に触発. 
 
-## 🧠 How the game engine works
+## 🧠 ゲームエンジンの仕組み
 
-1. You open an issue with a move in algebraic notation (`e2e4`, `Nf3`, `O-O`)
-2. The Action validates the move with python-chess
-3. Board state lives in `game/state.fen` — the README renders it
-4. Bot replies instantly with a Stockfish-lite move (or random if unset)
-5. Leaderboard updates — every player appears in `game/players.md`
+1。 重力表記(`e2e4`、`Nf3`、`O-O`)の移動で問題を開きます。
+2。 アクションは、python-chessで移動を検証します
+3. ボードの状態は`game/state.fen`に住んでいます — READMEはそれをレンダリングします
+4. ボットは、ストックフィッシュライトの動き(または無作為)で即座に応答します。
+5。 リーダーボードの更新 — `game/players.md` のすべてのプレーヤーが表示されます
 
-## ♟️ Move notation reference
+## ️️ 表記の参照を移動
 
-| You type | Meaning |
+| あなたタイプ | 意味 |
 |---|---|
-| `e2e4` | Pawn from e2 to e4 |
-| `g1f3` | Knight g1→f3 |
-| `e1g1` | Castle kingside (O-O) |
-| `d7d5q` | Pawn promotes to queen |
-| `resign` | Forfeit |
+| `e2e4` | e2からe4までのエビ |
+| `g1f3` | ナイトg1→f3 |
+| `e1g1` | キャッスルキングサイド(O-O) |
+| `d7d5q` | 王様が女王様へ昇格 |
+| `resign` | フォーファイト |
 
-## 🏆 Why this works
+# # # # # # # # #
 
-Timburgan's version hit 56,000 commits because each move is a *real* commit by a real person — the repo stays perpetually active in feeds. Every player becomes a contributor.
+Timburgan のバージョンが 56,000 コミットにヒットしました。なぜなら、それぞれの動きは、実際の人による *real* コミットです。リポジトリはフィードで永久にアクティブにとどまります。 プレイヤーはコントリビューターになります。
 
 ---
 ## 貢献
