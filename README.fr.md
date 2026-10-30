@@ -4,20 +4,18 @@
 
 Échecs communautaires via les Issues GitHub — à toi de jouer !
 
-_Le contenu détaillé (listes, liens, descriptions) est en anglais pour rester maintenable — les sections ci-dessous te guident._
+Les échecs communautaires, propulsés par GitHub Issues
 
-## ♟️ Community chess, powered by GitHub Issues
+Le conseil vit dans ce README. N'importe qui peut jouer — les mouvements sont soumis comme des problèmes.
 
-The board lives in this README. Anyone can play — moves are submitted as Issues.
+Comment jouer
 
-## 🎮 How to play
+1. Vérifiez le tableau actuel ci-dessous (mise à jour par le robot après chaque déplacement)
+2. Ouvrir une [Question](../../issues/new) intitulée avec votre déménagement en notation algébrique — par exemple `chess: e2e4`
+3. Un bot valide le mouvement, le joue sur le tableau, et ferme le problème
+4. Premier arrivé, premier servi — un déménagement par personne jusqu'à ce que quelqu'un d'autre joue!
 
-1. Check the current board below (updated by the bot after each move)
-2. Open an [Issue](../../issues/new) titled with your move in algebraic notation — e.g. `chess: e2e4`
-3. A bot validates the move, plays it on the board, and closes the issue
-4. First come, first served — one move per person until someone else plays!
-
-## 📋 Current position
+Situation actuelle
 
 ```
     a   b   c   d   e   f   g   h
@@ -41,37 +39,37 @@ The board lives in this README. Anyone can play — moves are submitted as Issue
     a   b   c   d   e   f   g   h
 ```
 
-**White to move.** Move count: 0
+** Blanc à déplacer.** Déplacement : 0
 
-## 🏅 Hall of fame
+Salle de gloire
 
-| Player | Moves |
+Le joueur bouge
 |---|---|
-| *nobody yet — be the first!* | — |
+*Personne encore — soyez le premier!
 
-_Inspired by the legendary timburgan/timburgan community chess experiment._
+Inspiré par la légendaire expérience d'échecs de la communauté timburgaine/timburgaine. 
 
-## 🧠 How the game engine works
+Comment fonctionne le moteur de jeu
 
-1. You open an issue with a move in algebraic notation (`e2e4`, `Nf3`, `O-O`)
-2. The Action validates the move with python-chess
-3. Board state lives in `game/state.fen` — the README renders it
-4. Bot replies instantly with a Stockfish-lite move (or random if unset)
-5. Leaderboard updates — every player appears in `game/players.md`
+1. Vous ouvrez un problème avec un mouvement en notation algébrique (`e2e4`, `Nf3`, `O-O`)
+2. L'Action valide le mouvement avec python-chess
+3. L'Etat du Conseil vit dans `game/state.fen` — le README rend
+4. Bot répond instantanément avec un mouvement Stockfish-lite (ou aléatoire si non défini)
+5. Mises à jour Leaderboard — chaque lecteur apparaît dans `game/players.md`
 
-## ♟️ Move notation reference
+Référence de notation de déplacement
 
-| You type | Meaning |
+Vous tapez la signification
 |---|---|
-| `e2e4` | Pawn from e2 to e4 |
-| `g1f3` | Knight g1→f3 |
-| `e1g1` | Castle kingside (O-O) |
-| `d7d5q` | Pawn promotes to queen |
-| `resign` | Forfeit |
+`e2e4`=Pion de e2 à e4=
+`g1f3`: Chevalier g1→f3
+`e1g1`: Château kingside (O-O)
+`d7d5q`: Pawn fait la promotion de la reine
+`resign`
 
-## 🏆 Why this works
+Pourquoi ça marche ?
 
-Timburgan's version hit 56,000 commits because each move is a *real* commit by a real person — the repo stays perpetually active in feeds. Every player becomes a contributor.
+La version de Timburgan a frappé 56.000 commits parce que chaque mouvement est un commit *réel* par une personne réelle — la repo reste perpétuellement active dans les flux. Chaque joueur devient un contributeur.
 
 ---
 ## Contribuer
