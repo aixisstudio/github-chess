@@ -4,18 +4,18 @@
 
 通过 GitHub Issues 玩的社区国际象棋 — 该你走了！
 
-####社区围棋,由GitHub Issues提供动力
+## ♟️ 社区围棋,由GitHub Issues提供动力
 
-董事会住在这个研究。 任何人都可以玩——动作作为问题提交。
+棋盘就在这个README中。 任何人都可以通过提交issue以参与下棋。
 
-∮ 如何演奏∮
+## 🎮 如何游玩
 
-1. 请检查access-date=中的日期值 (帮助)
-2. 以代数符号(例如 `chess: e2e4`) 的移动方式打开一个[问题] (././issues/new)
-3. 机器人验证动作,在棋盘上演奏,并关闭问题
-4. 先到,先到,先到,每人一动,直到别人玩!
+1. 请检查当前棋盘的状态
+2. 打开一个[Issue] (././issues/new)并将棋子动向作为标题，以代数符号(例如 `chess: e2e4`) 的移动方式下棋
+3. 机器人验证动作,将改动展示在棋盘上,并关闭问题
+4. 先到者先动棋,每人走一步，等待其他人走一步才可提交自己的下一步棋
 
-□ □ □ 现任职位
+## 📋 当前棋盘战况
 
 ```
     a   b   c   d   e   f   g   h
@@ -41,39 +41,44 @@
 
 ** 白色需要移动。 ** 移动计数 : 0
 
-□□□□□□□ 名堂
+## 🏅 棋手荣誉榜
 
-QQ 玩家 QQ 移动QQ
+| 玩家 | 步数 |
 |---|---|
-{\fn黑体\fs22\bord1\shad0\3aHBE\4aH00\fscx67\fscy66\2cHFFFFFF\3cH808080}现在还没有人 {\fn黑体\fs22\bord1\shad0\3aHBE\4aH00\fscx67\fscy66\2cHFFFFFF\3cH808080}成为第一个!
+| *还没人上榜，快来当第一位！* | — |
 
- 受传说中的丁堡人/丁堡人社区围棋实验的启发.
+_灵感源自 timburgan/timburgan 的传奇社区国际象棋实验。_
 
-# # # 游戏引擎如何运行 #
+## 🧠 游戏引擎如何运行
 
-1. 用代数符号(`e2e4`、`Nf3`、`O-O`)移动打开一个问题
-2. 动作用蟒蛇刀验证动作
-3. 管委会在`game/state.fen`中生活——README使其
-4. 瓶子即时回复,采用鱼群升式移动(或如未设定则随机)
-5. 领导板更新 - 每个玩家出现在 `game/players.md`
+1. 打开一个issue，用代数符号(`e2e4`、`Nf3`、`O-O`)移动棋子
+2. GitHub Actions 会调用 python-chess 来检查这步棋是否符合棋规
+3. 棋盘状态保存在`game/state.fen` —— README将会显示它
+4. 机器即时回复,采用 Stockfish-lite 的方式移动(若未设定则随机)
+5. 玩家排行榜更新 - 每个玩家都将出现在 `game/players.md`
 
-# # # # # 移动注释引用
+## ♟️ 走法记号说明
 
-您输入 。 。
+| 你的输入 | 含义 |
 |---|---|
-`e2e4` 从e2到e4
-`g1f3` 骑士 g1 f3 |
-`e1g1` 城堡王边(O-O) |
-`d7d5q` 普恩晋升女王
-`resign` 伪造
+| `e2e4` | 兵从 e2 走到 e4 |
+| `g1f3` | 马从 g1 跳到 f3 |
+| `e1g1` | 王翼易位（O-O） |
+| `d7d8q` | 兵升变为后 |
+| `resign` | 认输 |
 
-□□□□□□□□□□为什么这样行得通
+## 🏆 为什么这样行得通
 
-Timburgan的版本打击了56,000人,因为每次行动都是真人所为——回波在饲料中永远活跃。 每个玩家都会成为贡献者.
+Timburgan 的版本累计产生了 56,000 次提交，因为每一步棋都是由真实玩家亲自提交的；这让仓库持续活跃在 GitHub 的动态中。每位玩家也因此成为项目贡献者。
 
 ---
-## 贡献
 
-欢迎提交 Pull Request，我们会审查并合并。由 [aixisstudio](https://github.com/aixisstudio) 维护，他也是开源应用防火墙 [Snitch](https://github.com/aixisstudio/Snitch) 的作者。
+欢迎提交 Pull Request，我们会审查并合并。由 [aixisstudio](https://github.com/aixisstudio) 维护，同时他也是开源应用防火墙 [Snitch](https://github.com/aixisstudio/Snitch) 的作者。
 
-## 许可证: MIT
+## 许可证: 
+
+MIT
+
+## ♟️ 当前游戏战况
+
+请看[game/board.md](game/board.md)——走出你的一步棋：打开一个issue标题为你的棋子动向（或标题为‘new’以重新开始）

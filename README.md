@@ -64,7 +64,7 @@ _Inspired by the legendary timburgan/timburgan community chess experiment._
 | `e2e4` | Pawn from e2 to e4 |
 | `g1f3` | Knight g1→f3 |
 | `e1g1` | Castle kingside (O-O) |
-| `d7d5q` | Pawn promotes to queen |
+| `d7d8q` | Pawn promotes to queen |
 | `resign` | Forfeit |
 
 ## 🏆 Why this works
