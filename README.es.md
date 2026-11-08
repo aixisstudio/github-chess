@@ -39,13 +39,13 @@ La junta vive en este README. Cualquier persona puede jugar — los movimientos 
     a   b   c   d   e   f   g   h
 ```
 
-Silencio. Conteo de movimiento: 0
+| . Conteo de movimiento: 0
 
 ## ⋅ Hall of fame
 
-Silencioso Jugador Silenciosa
+| so Jugador | sa
 |---|---|
-Silencio *Nadie todavía — ¡sé el primero!* ←
+|  *Nadie todavía — ¡sé el primero!* ←
 
 Inspirado por el legendario experimento de ajedrez comunitario timburgan/timburgan. 
 
@@ -59,13 +59,13 @@ Cómo funciona el motor del juego
 
 ## ♟ Move notation reference
 
-Silencio Usted escribe Silencio Significado
+| Usted escribe |  Significado
 |---|---|
-Silencio `e2e4`
-Silencio `g1f3` Silencio Knight g1→f3
-Silencio `e1g1` Silencioso Castillo rey (O-O)
-Silencio `d7d5q` Silencio Pawn promueve a la reina
-TEN ANTERIOR `resign`
+| `e2e4` | - |
+| `g1f3` | Knight g1→f3 |
+| `e1g1` | so Castillo rey (O-O) |
+| `d7d8q` |  Pawn promueve a la reina |
+| `resign` | Rendirse |
 
 ## 🏆 Why this works
 

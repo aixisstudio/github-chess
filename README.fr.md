@@ -59,15 +59,15 @@ Comment fonctionne le moteur de jeu
 
 Référence de notation de déplacement
 
-Vous tapez la signification
+| Vous tapez | la signification |
 |---|---|
-`e2e4`=Pion de e2 à e4=
-`g1f3`: Chevalier g1→f3
-`e1g1`: Château kingside (O-O)
-`d7d5q`: Pawn fait la promotion de la reine
-`resign`
+| `e2e4` | Pion de e2 à e4 |
+| `g1f3` | Chevalier g1→f3 |
+| `e1g1` | Château kingside (O-O) |
+| `d7d8q` | Pawn fait la promotion de la reine |
+| `resign` | - |
 
-Pourquoi ça marche ?
+## 🏆 Pourquoi ça marche ?
 
 La version de Timburgan a frappé 56.000 commits parce que chaque mouvement est un commit *réel* par une personne réelle — la repo reste perpétuellement active dans les flux. Chaque joueur devient un contributeur.
 
