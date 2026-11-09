@@ -76,4 +76,10 @@
 
 Pull request'ы приветствуются — открой PR, он будет проверен и принят. Ведёт [aixisstudio](https://github.com/aixisstudio), автор [Snitch](https://github.com/aixisstudio/Snitch) — open-source application firewall.
 
-## Лицензия: MIT
+## Лицензия
+
+MIT
+
+## ♟️ Текущая партия
+
+Смотрите [game/board.md](game/board.md) и сделайте ход: откройте issue с заголовком `e2e4` (или `new`, чтобы начать заново).
