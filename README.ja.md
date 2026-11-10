@@ -76,4 +76,10 @@ Timburgan のバージョンが 56,000 コミットにヒットしました。�
 
 プルリクエストを歓迎します。レビューしてマージします。[aixisstudio](https://github.com/aixisstudio) による管理 — オープンソースのアプリケーションファイアウォール [Snitch](https://github.com/aixisstudio/Snitch) の作者です。
 
-## ライセンス: MIT
+## ライセンス
+
+MIT
+
+## ♟️ 現在の対局
+
+[game/board.md](game/board.md) を確認して手を指しましょう。タイトルを `e2e4` にした Issue を開いてください（`new` で再開できます）。

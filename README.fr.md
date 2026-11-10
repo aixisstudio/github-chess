@@ -76,4 +76,10 @@ La version de Timburgan a frappé 56.000 commits parce que chaque mouvement est 
 
 Les pull requests sont les bienvenues : ouvre une PR, elle sera relue et fusionnée. Maintenu par [aixisstudio](https://github.com/aixisstudio), auteur de [Snitch](https://github.com/aixisstudio/Snitch), pare-feu applicatif open source.
 
-## Licence: MIT
+## Licence
+
+MIT
+
+## ♟️ Partie en cours
+
+Consultez [game/board.md](game/board.md) — jouez votre coup : ouvrez une issue intitulée `e2e4` (ou `new` pour recommencer).
